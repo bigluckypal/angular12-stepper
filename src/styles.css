@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+.container li {
+	width: 50%;
+}
+
+.ng-wizard-theme-arrows {
+	border: 0;
+}
+
+.ng-wizard-theme-arrows>ul.step-anchor {
+	background: #fff !important;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.ng-wizard-theme-arrows>ul.step-anchor>li.done>a {
+	color: #ddd !important;
+	padding: 22px 15% 22px 50%;
+	background: transparent !important;
+}
+
+.ng-wizard-theme-arrows>ul.step-anchor>li.active>a {
+	color: #4F46E5 !important;
+	padding: 22px 15% 22px 50%;
+	background: #fff !important;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li>a:hover {
+	padding: 22px 15% 22px 50%;
+	background: transparent !important;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li>a {
+	padding: 22px 15% 22px 50%;
+	background: transparent !important;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(3).active>a {
+	padding: 22px 15% 22px 50%;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(3)>a {
+	padding: 22px 15% 22px 50%;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(4).active>a {
+	padding: 22px 15% 22px 50%;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(4)>a {
+	padding: 22px 15% 22px 50%;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li>a:after {
+	border-left: 30px solid #fff !important;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li.active>a:after {
+	border-left: 30px solid #fff !important;
+}
+.ng-wizard-theme-arrows>ul.step-anchor>li.done>a:after {
+	border-left: 30px solid #fff !important;
+}
+.ng-wizard-theme-arrows .step-content {
+	padding: 0;
+}
+
+.nav-tabs .nav-item {
+	position: relative;
+}
+
+.step-anchor > li:after {
+	display: table;
+	color: #ddd;
+	width: 0;
+	height: 0;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	position: absolute;
+	margin-top: -53px;
+	margin-left: 23%;
+	padding: 10px;
+	left: 0;
+	z-index: 2;
+}
+.step-anchor > li.active:after {
+	color: #4F46E5;
+	border: 1px solid #4F46E5;
+}
+.step-anchor > li:nth-child(1)::after {
+	content: "01";
+}
+.step-anchor > li:nth-child(2)::after {
+	content: "02";
+}
+.step-anchor > li:nth-child(3)::after {
+	content: "03";
+	margin-top: -53px;
+}
+.step-anchor > li:nth-child(4)::after {
+	content: "04";
+	margin-top: -53px;
+}
+
+.step-anchor > .nav-item > a {
+	padding: 0;
+}
+
+.ng-wizard-btn-prev {
+	background: #fff !important;
+	color: black !important;
+	border-radius: 5px !important;
+	margin: 0 5px !important;
+}
+.ng-wizard-btn-next {
+	background: #4F46E5 !important;
+	color: #fff !important;
+	border-radius: 5px !important;
+	margin-left: 5px !important;
+}
+.ng-wizard-btn-group {
+	margin-right: 0 !important;
+}
+
+.ng-wizard-theme-arrows .ng-wizard-toolbar {
+	padding-right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+	.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(2).done>a {
+		padding: 32px 15% 32px 50%;
+	}
+	.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(2).active>a {
+		padding: 32px 15% 32px 50%;
+	}
+	.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(2)>a:hover {
+		padding: 32px 15% 32px 50%;
+	}
+	.ng-wizard-theme-arrows>ul.step-anchor>li:nth-child(2)>a {
+		padding: 32px 15% 32px 50%;
+	}
+	.step-anchor > li:after {
+		margin-top: -63px;
+	}
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

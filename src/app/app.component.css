@@ -1,0 +1,93 @@
+/* .basic_information_main {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+} */
+
+.label {
+	font-weight: 500;
+}
+
+.currency_unit {
+	background: #ddd;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+	padding: 8px 0;
+}
+
+.currency_input {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.mat-button {
+	border: 1px solid #ddd;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+  
+  /* IMAGE STYLES */
+[type=radio] + div {
+	cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + div {
+	outline: 2px solid #4F46E5;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url("../assets/images/arrow_down.jpg") white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+}
+
+.instagram {
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+.instagram img {
+	width: 122%;
+	position: relative;
+	margin-left: -6px;
+	margin-top: -6px;
+	max-width: none;
+}
+.facebook {
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+.facebook img {
+	width: 100%;
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	max-width: none;
+}
+.tiktok {
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+.tiktok img {
+	width: 122%;
+	position: relative;
+	margin-left: -8px;
+	margin-top: -18px;
+	max-width: none;
+}
